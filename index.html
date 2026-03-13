@@ -6,35 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <title>Document</title>
+    <title>Responsive Books</title>
 </head>
 
-<body>
+<body class="bg-gray-50">
     <main>
         <section>
-            <div id="buttons" class="w-10/12 mx-auto flex gap-2 justify-center mt-9">
-                <button id="btn-1" class="btn btn-primary ">All Books</button>
-                <button id="btn-2" class="btn  ">Story</button>
-                <button id="btn-3" class="btn  ">Comedy</button>
-                <button id="btn-4" class="btn  ">Horror</button>
+            <div id="buttons" class="w-11/12 mx-auto flex flex-wrap gap-2 justify-center mt-9">
+                <button id="btn-1" class="btn btn-primary flex-1 sm:flex-auto">All Books</button>
+                <button id="btn-2" class="btn flex-1 sm:flex-auto">Story</button>
+                <button id="btn-3" class="btn flex-1 sm:flex-auto">Comedy</button>
+                <button id="btn-4" class="btn flex-1 sm:flex-auto">Horror</button>
             </div>
         </section>
-        <section class=" mt-8">
 
-            <div id="allBooksContainer" class="hidden w-11/12 mx-auto grid grid-cols-4 gap-6">
+        <section class="mt-8">
 
+            <!-- All Books -->
+            <div id="allBooksContainer" class="hidden w-11/12 mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6">
+                <!-- Book items go here -->
             </div>
 
-            <div id="allBooksContainer1" class="hidden w-11/12 mx-auto grid grid-cols-4 gap-6">
-        
+            <!-- Story Books -->
+            <div id="allBooksContainer1" class="hidden w-11/12 mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6">
             </div>
-            <div id="allBooksContainer2" class="hidden w-11/12 mx-auto grid grid-cols-4 gap-6">
-                
-                
-            </div>
-            <div id="allBooksContainer3" class="hidden w-11/12 mx-auto grid grid-cols-4 gap-6">
-                
 
+            <!-- Comedy Books -->
+            <div id="allBooksContainer2" class="hidden w-11/12 mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6">
+            </div>
+
+            <!-- Horror Books -->
+            <div id="allBooksContainer3" class="hidden w-11/12 mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6">
             </div>
 
         </section>
