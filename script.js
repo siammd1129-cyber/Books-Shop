@@ -26,7 +26,7 @@ const showTheCards = (infos) => {
     infos.forEach(element => {
         const newDiv = document.createElement("div")
         newDiv.innerHTML = `
-        <div class="flex flex-col items-center text-center border-2 border-red-500 rounded-xl p-4 w-60">
+        <div class="flex flex-col items-center text-center border-2 border-red-500 rounded-xl p-4 h-full object-cover">
     
     <img src="${element.image}" class="w-32 h-32 object-cover mb-2">
 
